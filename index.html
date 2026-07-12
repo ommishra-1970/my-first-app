@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🐾 Wild Animal Quiz 🐾</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-emojis" id="floatingEmojis"></div>
+
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h1>🐾 Wild Animal Quiz 🐾</h1>
+      <p class="subtitle">How well do you know the animal kingdom?</p>
+    </header>
+
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="progress-text" id="progressText">Question 1 of 5</span>
+    </div>
+
+    <div id="quizCard" class="quiz-card">
+      <div class="question-emoji" id="questionEmoji">🦁</div>
+      <h2 class="question-text" id="questionText">Loading...</h2>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+
+    <div id="resultCard" class="result-card hidden">
+      <div class="result-emoji" id="resultEmoji">🏆</div>
+      <h2 id="resultTitle">Quiz Complete!</h2>
+      <p class="score-text" id="scoreText">You scored 0 / 5</p>
+      <p class="result-message" id="resultMessage"></p>
+      <button class="btn-primary" id="restartBtn">🔄 Play Again</button>
+    </div>
+
+    <button class="btn-next hidden" id="nextBtn">Next Question ➡️</button>
+  </div>
+
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
